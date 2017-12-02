@@ -1,0 +1,12 @@
+[package]
+name = "december-01"
+version = "0.1.0"
+authors = ["Beskhue <thomas@kepow.org>"]
+description = "Solutions to the Advent of Code 2017 programming puzzles."
+
+[dependencies]
+
+[[bin]]
+name="december01"
+path="src/december01.rs"
+
