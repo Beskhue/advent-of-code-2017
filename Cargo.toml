@@ -1,5 +1,5 @@
 [package]
-name = "december-01"
+name = "Advent of Code 2017"
 version = "0.1.0"
 authors = ["Beskhue <thomas@kepow.org>"]
 description = "Solutions to the Advent of Code 2017 programming puzzles."
@@ -9,4 +9,8 @@ description = "Solutions to the Advent of Code 2017 programming puzzles."
 [[bin]]
 name="december01"
 path="src/december01.rs"
+
+[[bin]]
+name="december02"
+path="src/december02.rs"
 
