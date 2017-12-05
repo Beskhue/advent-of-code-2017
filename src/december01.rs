@@ -8,21 +8,27 @@ fn main() {
     }
 
     // Calculate the sum
-    let mut sum = 0;
+    let mut sum_next: i32 = 0;
+    let mut sum_halfway_round: i32 = 0;
     for (idx, val) in input_vec.iter().enumerate() {
         // Look at the next index in the vec
-        //let next_idx = (idx + 1) % input_vec.len();
+        let next_idx = (idx + 1) % input_vec.len();
 
         // Look at the index halfway round the vec
-        let next_idx = (idx + input_vec.len() / 2) % input_vec.len();
+        let halfway_round_idx = (idx + input_vec.len() / 2) % input_vec.len();
 
         // If the value at that index is equal to the current value, add it
         // to the sum
         if val == &input_vec[next_idx as usize] {
-            sum = sum + val;
+            sum_next += *val;
+        }
+
+        if val == &input_vec[halfway_round_idx as usize] {
+            sum_halfway_round += *val;
         }
     }
 
     // Output the sum
-    println!("{:#?}", sum);
+    println!("Part 1: {:#?}", sum_next);
+    println!("Part 2: {:#?}", sum_halfway_round);
 }
