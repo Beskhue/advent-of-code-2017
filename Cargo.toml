@@ -1,12 +1,12 @@
 [package]
-name = "Advent of Code 2017"
+name = "advent_of_code_2017"
 version = "0.1.0"
 authors = ["Beskhue <thomas@kepow.org>"]
 description = "Solutions to the Advent of Code 2017 programming puzzles."
 
 [dependencies]
 regex = "0.2"
-petgraph = "0.4"
+petgraph = "0.4.13"
 itertools = "0.7.3"
 
 [[bin]]
@@ -36,3 +36,7 @@ path="src/december06.rs"
 [[bin]]
 name="december07"
 path="src/december07.rs"
+
+[[bin]]
+name="december08"
+path="src/december08.rs"
